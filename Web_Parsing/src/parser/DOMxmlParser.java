@@ -16,8 +16,9 @@ import org.w3c.dom.NodeList;
 import parser.entity.Car;
 
 
-public class DOMxmlReader {
+public class DOMxmlParser {
 
+    private static List<Car> carList;
 
     public static void ParseCars(String filepath){
 
@@ -37,7 +38,7 @@ public class DOMxmlReader {
 
             NodeList nodeList = doc.getElementsByTagName("car");
 
-            List<Car> carList = new ArrayList<Car>();
+            carList = new ArrayList<Car>();
             for (int i = 0; i < nodeList.getLength(); i++) {
                 carList.add(getCar(nodeList.item(i)));
             }
@@ -74,5 +75,9 @@ public class DOMxmlReader {
         return node.getNodeValue();
     }
 
+
+    public static List<Car> getCarList() {
+        return carList;
+    }
 
 }

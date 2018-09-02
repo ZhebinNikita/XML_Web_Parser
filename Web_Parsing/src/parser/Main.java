@@ -3,12 +3,9 @@ package parser;
 import java.io.*;
 import java.util.List;
 
-import javax.smartcardio.Card;
-import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-import org.xml.sax.SAXException;
 import parser.entity.Car;
 
 public class Main {
@@ -18,13 +15,16 @@ public class Main {
         String filePath = "C:\\Users\\User\\IdeaProjects\\Web_Parsing\\src\\parser\\cars.xml";
 
 
-        DOMxmlReader.ParseCars(filePath);
+        // DOM parser
+
+        DOMxmlParser.ParseCars(filePath);
 
 
 
-        System.out.println(); ///////////////////////////////////////////
+        System.out.println();
 
 
+        // SAX parser
 
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -44,15 +44,19 @@ public class Main {
 
 
 
-        System.out.println(); ///////////////////////////////////////////
+        System.out.println();
 
 
+        // StAX parser
 
         List<Car> carList = StAXxmlParser.parseXMLfile(filePath);
 
         for (Car car : carList) {
             System.out.println(car.toString());
         }
+
+
+
 
 
     }

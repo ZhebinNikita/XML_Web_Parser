@@ -29,4 +29,83 @@
     </car>
 
 
+<!-- JUnit test is made for three entities above!
+
+    <car>
+        <id>ID_4</id>
+        <name>BMW</name>
+        <daily_rental_price>390</daily_rental_price>
+        <class>Mini</class>
+        <busyness>0</busyness>
+    </car>
+
+    <car>
+        <id>ID_5</id>
+        <name>Tesla</name>
+        <daily_rental_price>5200</daily_rental_price>
+        <class>Lux</class>
+        <busyness>0</busyness>
+    </car>
+
+    <car>
+        <id>ID_6</id>
+        <name>Fast car</name>
+        <daily_rental_price>4300</daily_rental_price>
+        <class>Family</class>
+        <busyness>1</busyness>
+    </car>
+
+
+
+    <car>
+        <id>ID_7</id>
+        <name>Lamborgini</name>
+        <daily_rental_price>33390</daily_rental_price>
+        <class>Special</class>
+        <busyness>1</busyness>
+    </car>
+
+    <car>
+        <id>ID_8</id>
+        <name>Audi</name>
+        <daily_rental_price>4400</daily_rental_price>
+        <class>Special</class>
+        <busyness>0</busyness>
+    </car>
+
+    <car>
+        <id>ID_9</id>
+        <name>Space Ship</name>
+        <daily_rental_price>434</daily_rental_price>
+        <class>Family</class>
+        <busyness>1</busyness>
+    </car>
+
+
+
+    <car>
+        <id>ID_10</id>
+        <name>Interstellar</name>
+        <daily_rental_price>999</daily_rental_price>
+        <class>Mini</class>
+        <busyness>1</busyness>
+    </car>
+
+    <car>
+        <id>ID_11</id>
+        <name>Inception</name>
+        <daily_rental_price>8059</daily_rental_price>
+        <class>Special</class>
+        <busyness>0</busyness>
+    </car>
+
+    <car>
+        <id>ID_12</id>
+        <name>Primary car</name>
+        <daily_rental_price>5532</daily_rental_price>
+        <class>Lux</class>
+        <busyness>0</busyness>
+    </car>
+-->
+
 </car_hire_service>
